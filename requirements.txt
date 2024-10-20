@@ -1,0 +1,6 @@
+numpy
+matplotlib
+sympy
+ipympl
+numba
+opencv-python

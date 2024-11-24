@@ -9,7 +9,7 @@ class EinfacheInteraktion:
         
         # Label für Anzeigewert
         self.label = tk.Label(master, text="Wert: 0")
-        self.label.pack(padx=50, pady=20)
+        self.label.pack(pady=0)
         
         # Buttons für +/- Operationen
         self.plus_button = tk.Button(master, text="+1", command=self.increment)

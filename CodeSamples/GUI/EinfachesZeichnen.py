@@ -42,7 +42,7 @@ class EinfachesZeichnen:
             # Vertikale Linien
             self.canvas.create_line(i, 50, i, 250, fill='lightgray')
             # Horizontale Linien
-            self.canvas.create_line(50, i, 350, i, fill='lightgray')
+            self.canvas.create_line(50, i, 350, i, fill='lightblue')
         
         # x-Achse
         self.canvas.create_line(50, 150, 350, 150, arrow=tk.LAST)
@@ -73,7 +73,7 @@ class EinfachesZeichnen:
             
             # Punkt nur zeichnen, wenn er im sichtbaren Bereich liegt
             if 50 <= x <= 350 and 50 <= y <= 250:
-                punkt = self.canvas.create_oval(x-5, y-5, x+5, y+5, fill="red")
+                punkt = self.canvas.create_oval(x-5, y-15, x+5, y+15, fill="red")
                 self.punkte.append((x_wert, y_wert))
                 self.coord_label.config(text=f"Punkt bei ({x_wert}, {y_wert})")
             else:

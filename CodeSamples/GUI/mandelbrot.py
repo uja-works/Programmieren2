@@ -81,9 +81,9 @@ class MandelbrotApp:
         x, y = event.x, event.y
         zx, zy = self.pixel_to_complex(x, y)
         
-        zoom_factor = 0.5
-        x_range = (self.x_max - self.x_min) * zoom_factor
-        y_range = (self.y_max - self.y_min) * zoom_factor
+        #zoom_factor = 0.5
+        #x_range = (self.x_max - self.x_min) * zoom_factor
+        #y_range = (self.y_max - self.y_min) * zoom_factor
         
         if event.state & 0x0001:  # Shift key is pressed
             zoom_factor = 2.0
@@ -94,7 +94,6 @@ class MandelbrotApp:
         y_range = (self.y_max - self.y_min) * zoom_factor
 
         self.x_min, self.x_max = zx - x_range / 2, zx + x_range / 2
-        self.y_min, self.y_max = zy - y_range / 2, zy + y_range / 2
         self.y_min, self.y_max = zy - y_range / 2, zy + y_range / 2
         
         self.draw_mandelbrot()

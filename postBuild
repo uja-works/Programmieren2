@@ -50,6 +50,8 @@ ln -s ~/.quarto/opt/quarto/bin/quarto ~/.local/bin/quarto
 # create the proper pandoc symlink to enable visual editor in Quarto extension
 ln -s ~/.quarto/opt/quarto/bin/tools/x86_64/pandoc ~/.quarto/opt/quarto/bin/tools/pandoc
 
+# Install LaTeX for PDF rendering
+apt-get update && apt-get install -y texlive texlive-xetex texlive-fonts-recommended texlive-latex-extra
 
 echo
 echo Installed Quarto

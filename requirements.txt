@@ -4,4 +4,6 @@ sympy
 ipympl
 numba
 pandas
+jupyter
+quarto
 opencv-python

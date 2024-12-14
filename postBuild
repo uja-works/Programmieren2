@@ -54,6 +54,16 @@ ln -s ~/.quarto/opt/quarto/bin/tools/x86_64/pandoc ~/.quarto/opt/quarto/bin/tool
 echo
 echo Installed Quarto
 echo
+
+echo
+echo Installing TinyTex
+echo
+# install tinytex
+quarto install tinytex --no-prompt
+
+echo
+echo Installed TinyTex
+echo
 # install required python packages
 python3 -m pip install jupyterlab-quarto==0.1.45
 
